@@ -5,6 +5,6 @@ services:
     container_name: mqtt
     network_mode: "host"
     volumes:
-      - "${CONFIG}:/mosquitto/config:rw"
-      - "${DATA}:/mosquitto/data:rw"
-      - "${LOG}:/mosquitto/log:rw"
+      - "${CONFIG}:/mosquitto/config"
+      - "${DATA}:/mosquitto/data"
+      - "${LOG}:/mosquitto/log"
