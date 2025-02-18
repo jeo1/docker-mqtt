@@ -1,0 +1,10 @@
+services:
+  jackett:
+    image: eclipse-mosquitto:latest
+    pull_policy: always
+    container_name: mqtt
+    network_mode: "host"
+    volumes:
+      - "${CONFIG}:/mosquitto/config:rw"
+      - "${DATA}:/mosquitto/data:rw"
+      - "${LOG}:/mosquitto/log:rw"
