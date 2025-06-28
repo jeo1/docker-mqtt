@@ -1,5 +1,5 @@
 services:
-  jackett:
+  mqtt:
     image: eclipse-mosquitto:latest
     pull_policy: always
     container_name: mqtt
